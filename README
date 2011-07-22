@@ -1,0 +1,39 @@
+Installation :
+  
+  cd ~
+  git clone git://myvim.git ~./vim
+
+Create symbolic links :
+
+  ln -s ~/.vim/vimrc ~/.vimrc
+
+Bundles :
+
+cd ~/.vim
+git submodule init
+git submodule update
+
+To update to the latest version of each plugin bundle, run the following :
+
+cd ~/.vim
+git submodule foreach git pull origin master
+
+Plugins :
+
+- align
+- fugitive : Git wrapper
+- gundo
+- matchit
+- nerdtree
+- pathogen : Allows vim plugins to be installed as bundles
+- snipmate
+- surround
+- syntastic
+
+Kudos :
+
+Drew Neil aka nelstorm of vimcasts.org
+Sias Mey
+Andrey Kozlov
+
+
