@@ -1,7 +1,7 @@
 Installation :
   
   cd ~
-  git clone git://myvim.git ~./vim
+  git clone git@github.com:chesney/chesvim.git ~./vim
 
 Create symbolic links :
 
