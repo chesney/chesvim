@@ -1,28 +1,28 @@
 "Show invisibles, blank lines, tabs
-nmap <leader>l :set list!<CR>
+nmap <C-l> <esc>:set list!<cr>
 
-"Disable line numbering
-nmap <F6> :set number!<CR> 
+"Line numbering toggle
+nmap <s-l> <esc>:set number!<CR>
 
 " Nerd Tree
 "nmap <F7> :NERDTreeToggle<CR> "Toggle NERD Tree on and off with F7
 "nmap <S-F7> :NERDTreeClose<CR> "Close NERD Tree with F7
-"nmap <leader>o :NERDTreeToggle<cr>
-"nmap <leader>O :NERDTreeFind<cr>
-map <C-n> <esc>:NERDTree<cr>
+nmap <C-n> <esc>:NERDTreeToggle<cr>
+nmap <leader>O :NERDTreeFind<cr>
+"map <C-n> <esc>:NERDTree<cr>
 
 "Switch between tabs
 map <s-z> <esc>:tabprevious<cr>
 map <s-x> <esc>:tabnext<cr>
 
-" Indent using tabs (while in visual mode) 
+" Indent using tabs (while in visual mode)
 vnoremap <tab>       >gv
 vnoremap <s-tab>     <gv
 vnoremap <           <gv
 vnoremap >           >gv
 
 " G undo keymappings
-nnoremap <F4> :GundoToggle<CR>
+nnoremap <C-u> <esc>:GundoToggle<CR>
 
 "String trailing whitespaces
 function! <SID>StripTrailingWhitespaces()

@@ -73,7 +73,7 @@ set ofu=syntaxcomplete#Complete
 
 "Match Settings
 set showmatch
-set matchpairs=(:),{:},[:],<:>
+set matchpairs=(:),{:},[:],<:>,":"
 
 "Search Settings
 set gdefault "make regexp matches everything, instead of just the first one 
