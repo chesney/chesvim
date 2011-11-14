@@ -29,6 +29,7 @@ Plugins :
 - snipmate
 - surround
 - syntastic
+- git-vim
 
 Kudos :
 
