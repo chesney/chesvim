@@ -53,7 +53,6 @@ set nofoldenable "Dont fold code
 
 "Vim screen settings
 set mousehide "Hide the mouse pointer while typing
-set ruler
 set title
 set titlestring=%f%(\ [%M]%)  " Show file name at the title
 set showcmd "Show current mode in lower right corner
@@ -88,12 +87,13 @@ set noerrorbells
 "
 "Vim Colors and fonts
 "
-syntax enable "Enable syntax highlight
-syntax on
-set t_Co=256 "Enable 256 bit terminal color
-colorscheme twilight256 "Vim colorscheme - Textmate
-set gfn=Monaco\ 10 "Set font
-set shell=/bin/bash "Set shell
+"syntax enable "Enable syntax highlight
+"syntax on
+"set t_Co=256 "Enable 256 bit terminal color
+set background=dark
+colorscheme solarized "Vim colorscheme - Textmate
+set gfn=Monaco\ 10 
+set shell=/bin/zsh 
 set textwidth=120 "Set text width
 
 "Syntastic
