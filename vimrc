@@ -16,7 +16,6 @@ source ~/.vim/vimrc-keymaps
 
 " Fix some VIM defaults
 set nocompatible
-set nonumber "Dont display line numbers
 set lazyredraw "Dont update display while executing macros
 set ttyfast
 set backspace=indent,eol,start "backspace works as expected
@@ -25,7 +24,7 @@ set modeline  "Respect modeline of the file
 set hidden "Avoid asking to save before hiding
 set enc=utf-8 "setlocal spell spelllang=en_us 
 set nospell "Useless spell checking
-set history=500 "n lines of history to remember
+set history=50 "n lines of history to remember
 set autoread "Read only when file is changed from outside
 
 filetype off
@@ -57,7 +56,6 @@ set title
 set titlestring=%f%(\ [%M]%)  " Show file name at the title
 set showcmd "Show current mode in lower right corner
 set showmode "Show current mode
-set nu
 "Set status line
 set stl=%f\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n\ [%b][0x%B]
 " tell VIM to always put a status line in, even if there is only one window
@@ -88,14 +86,14 @@ set noerrorbells
 "Vim Colors and fonts
 "
 "syntax enable "Enable syntax highlight
-"syntax on
-"set t_Co=256 "Enable 256 bit terminal color
+
+"set t_Co=16 "Enable 256 color terminal 
+let g:solarized_termcolors=16
 set background=dark
-colorscheme solarized "Vim colorscheme - Textmate
+colorscheme solarized 
 set gfn=Monaco\ 10 
 set shell=/bin/zsh 
 set textwidth=120 "Set text width
-
 "Syntastic
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
@@ -104,4 +102,6 @@ let g:syntastic_quiet_warnings=1
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
+
 

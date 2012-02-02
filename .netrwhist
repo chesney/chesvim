@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/tmp'
 let g:netrw_dirhist_2='/var/www/practice/css'
 let g:netrw_dirhist_3='/etc/apache2/sites-enabled'
@@ -7,3 +7,5 @@ let g:netrw_dirhist_4='/var/log/apache2'
 let g:netrw_dirhist_5='/etc/apache2/mods-enabled'
 let g:netrw_dirhist_6='/etc/apache2/conf.d'
 let g:netrw_dirhist_7='/home/chesney/test'
+let g:netrw_dirhist_8='/home/chesney/.config/terminator'
+let g:netrw_dirhist_9='/home/chesney/.vim'
