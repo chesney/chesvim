@@ -27,8 +27,8 @@ set nospell "Useless spell checking
 set history=50 "n lines of history to remember
 set autoread "Read only when file is changed from outside
 
+call pathogen#runtime_append_all_bundles()
 filetype off
-call pathogen#runtime_append_all_bundles() "Pathogen hack
 call pathogen#helptags()
 " Enable Filetype plugin after pathogen calls, matchit needs these settings
 
