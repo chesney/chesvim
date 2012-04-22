@@ -1,3 +1,23 @@
+chesvim - configured with all the vim plugins you need with a nice
+          solarized theme.
+
+Solarized theme install for gnome terminal :
+  
+  1. First fix the ls directory colors :
+    cd ~
+    wget --no-check-certificate https://raw.github.com/seebi/dircolors-solarized/master/dircolors.ansi-dark
+    mv dircolors.ansi-dark .dircolors
+    eval `dircolors ~/.dircolors`
+  
+  2.Setup solarized for gnome terminal
+    sudo apt-get install git-core
+    git clone https://github.com/sigurdga/gnome-terminal-colors-solarized.git
+    cd gnome-terminal-colors-solarized
+  
+  3.Set your preferred solarized theme
+    ./set_dark.sh
+    ./set_light.sh
+
 Installation :
   
   $ cd ~
@@ -39,7 +59,11 @@ In order to have vim syntax check JS files run the following commands :
 
   $ sudo apt-get install nodejs
 
+  NB : I recommend cloning the nodejs repository and installing nodejs manually
+
 2. install npm (node package manager)
+  
+  NB : The latest version of nodejs comes with npm.
 
   $ curl http://npmjs.org/install.sh | sh
   or
@@ -47,12 +71,13 @@ In order to have vim syntax check JS files run the following commands :
 
 3. install node-jslint
 
-  $ npm install jslint
+  $ sudo npm install jslint
 
 Kudos :
 
-Drew Neil aka nelstorm of vimcasts.org
-Sias Mey
-Andrey Kozlov
+  Drew Neil aka nelstorm of vimcasts.org
+  Sias Mey
+  Andrey Kozlov
 
-
+Links :
+  http://www.webupd8.org/2011/04/solarized-must-have-color-paletter-for.html
