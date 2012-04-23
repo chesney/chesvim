@@ -18,7 +18,7 @@ Solarized theme install for gnome terminal :
     ./set_dark.sh
     ./set_light.sh
 
-Installation :
+VIM Installation :
   
   $ cd ~
   $ git clone git@github.com:chesney/chesvim.git ~./vim
