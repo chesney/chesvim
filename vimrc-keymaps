@@ -1,4 +1,6 @@
 "Show invisibles, blank lines, tabs
+" C = ctrl
+" s = shift
 nmap <C-l> <esc>:set list!<cr>
 
 "Line numbering toggle
@@ -9,7 +11,6 @@ nmap <s-l> <esc>:set number!<CR>
 "nmap <S-F7> :NERDTreeClose<CR> "Close NERD Tree with F7
 nmap <C-n> <esc>:NERDTreeToggle<cr>
 nmap <leader>O :NERDTreeFind<cr>
-"map <C-n> <esc>:NERDTree<cr>
 
 "Switch between tabs
 map <s-z> <esc>:tabprevious<cr>
@@ -42,5 +43,3 @@ nmap _$ :call <SID>StripTrailingWhitespaces()<CR>
 "Delete all blank lines
 nmap _b :g/^$/d<CR>
 
-"Strip trailing whitespaces automatically
-autocmd BufWritePre *.py,*.js,*.txt,*.php :call <SID>StripTrailingWhitespaces()
